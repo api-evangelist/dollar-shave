@@ -1,8 +1,18 @@
 aid: dollar-shave
 name: Dollar Shave
-description: Dollar Shave is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Dollar Shave Club is a direct-to-consumer men's grooming and personal-care
+  brand founded in 2011 and acquired by Unilever in 2016, best known for
+  pioneering the subscription razor model that ships blades, shave butter,
+  skincare and body-care products to members on a recurring schedule. The
+  company sells through its own e-commerce storefront (dollarshaveclub.com,
+  built on Shopify) as well as retail channels, offering razor handles and
+  cartridges, grooming kits and gift sets. It surfaces in the API Evangelist
+  network as a portfolio company of Battery Ventures. Dollar Shave Club does not
+  operate a public developer program or documented API; its digital surface is a
+  consumer Shopify storefront whose only machine-discoverable interface is
+  Shopify's customer-account OAuth/OIDC (including a customer-account MCP API
+  scope) exposed at the store's /.well-known/ discovery endpoints.
 url: https://raw.githubusercontent.com/api-evangelist/dollar-shave/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +20,58 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: http://us.dollarshaveclub.com/cdn/shop/files/tomsbanner_ecd930c7-64fc-424c-90e6-ceed4920c87f.png?v=1746549885
 tags:
 - Company
+- Consumer
+- E-commerce
+- Retail
+- Subscription
+- Grooming
+- Personal Care
+- Direct to Consumer
+- Shopify
 apis: []
+common:
+- type: DomainSecurity
+  url: security/dollar-shave-domain-security.yml
+- type: Website
+  url: https://us.dollarshaveclub.com/
+- type: Blog
+  url: https://us.dollarshaveclub.com/blogs/club-chronicles
+- type: HelpCenter
+  url: https://ask.dollarshaveclub.com/
+- type: Support
+  url: https://ask.dollarshaveclub.com/en-US/how-do-i-contact-you-192340
+- type: PrivacyPolicy
+  url: https://ask.dollarshaveclub.com/en-US/privacy-policy-195939
+- type: TermsOfService
+  url: https://ask.dollarshaveclub.com/en-US/terms-of-service-195938
+- type: Login
+  url: https://us.dollarshaveclub.com/account/login
+- type: WellKnown
+  url: well-known/dollar-shave-well-known.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://us.dollarshaveclub.com/.well-known/
+host: https://us.dollarshaveclub.com
+note: >-
+  Dollar Shave Club runs on Shopify; the storefront exposes Shopify's
+  customer-account OAuth/OIDC discovery documents. The issuer points at
+  shopify.com/authentication/56839438384 and advertises a
+  customer-account-mcp-api:full scope (Shopify's customer-account MCP API).
+  No developer-facing /.well-known/security.txt, api-catalog or ai-plugin.json
+  is published.
+documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: dollar-shave-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: dollar-shave-oauth-authorization-server.json
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
