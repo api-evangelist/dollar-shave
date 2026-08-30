@@ -68,6 +68,11 @@ tags_raw:
 - Shopify
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/unilever/
+  name: Unilever
+  x-relationship: acquired
+  x-evidence: "Dollar Shave Club is a direct-to-consumer men's grooming and personal-care brand founded in 2011 and acquired by Unilever in 2016, best known for pioneering the subscription razor model that ships blades, shave butter, skincare and body-car"
 - type: DomainSecurity
   url: security/dollar-shave-domain-security.yml
 - type: Website
