@@ -1,18 +1,13 @@
 aid: dollar-shave
 name: Dollar Shave
-description: >-
-  Dollar Shave Club is a direct-to-consumer men's grooming and personal-care
-  brand founded in 2011 and acquired by Unilever in 2016, best known for
-  pioneering the subscription razor model that ships blades, shave butter,
-  skincare and body-care products to members on a recurring schedule. The
-  company sells through its own e-commerce storefront (dollarshaveclub.com,
-  built on Shopify) as well as retail channels, offering razor handles and
-  cartridges, grooming kits and gift sets. It surfaces in the API Evangelist
-  network as a portfolio company of Battery Ventures. Dollar Shave Club does not
-  operate a public developer program or documented API; its digital surface is a
-  consumer Shopify storefront whose only machine-discoverable interface is
-  Shopify's customer-account OAuth/OIDC (including a customer-account MCP API
-  scope) exposed at the store's /.well-known/ discovery endpoints.
+description: Dollar Shave Club is a direct-to-consumer men's grooming and personal-care brand founded in 2011 and
+  acquired by Unilever in 2016, best known for pioneering the subscription razor model that ships blades, shave
+  butter, skincare and body-care products to members on a recurring schedule. The company sells through its own
+  e-commerce storefront (dollarshaveclub.com, built on Shopify) as well as retail channels, offering razor handles
+  and cartridges, grooming kits and gift sets. It surfaces in the API Evangelist network as a portfolio company
+  of Battery Ventures. Dollar Shave Club does not operate a public developer program or documented API; its digital
+  surface is a consumer Shopify storefront whose only machine-discoverable interface is Shopify's customer-account
+  OAuth/OIDC (including a customer-account MCP API scope) exposed at the store's /.well-known/ discovery endpoints.
 url: https://raw.githubusercontent.com/api-evangelist/dollar-shave/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -72,7 +67,9 @@ common:
   url: https://apis.io/providers/unilever/
   name: Unilever
   x-relationship: acquired
-  x-evidence: "Dollar Shave Club is a direct-to-consumer men's grooming and personal-care brand founded in 2011 and acquired by Unilever in 2016, best known for pioneering the subscription razor model that ships blades, shave butter, skincare and body-car"
+  x-evidence: Dollar Shave Club is a direct-to-consumer men's grooming and personal-care brand founded in 2011 and
+    acquired by Unilever in 2016, best known for pioneering the subscription razor model that ships blades, shave
+    butter, skincare and body-car
 - type: DomainSecurity
   url: security/dollar-shave-domain-security.yml
 - type: Website
@@ -91,6 +88,8 @@ common:
   url: https://us.dollarshaveclub.com/account/login
 - type: WellKnown
   url: well-known/dollar-shave-well-known.yml
+- type: Website
+  url: https://www.dollarshaveclub.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
