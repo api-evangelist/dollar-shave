@@ -2,14 +2,13 @@ generated: '2026-07-18'
 method: searched
 source: https://us.dollarshaveclub.com/.well-known/
 host: https://us.dollarshaveclub.com
-note: >-
-  Dollar Shave Club runs on Shopify; the storefront exposes Shopify's
-  customer-account OAuth/OIDC discovery documents. The issuer points at
-  shopify.com/authentication/56839438384 and advertises a
-  customer-account-mcp-api:full scope (Shopify's customer-account MCP API).
-  No developer-facing /.well-known/security.txt, api-catalog or ai-plugin.json
-  is published.
-documents:
+note: Dollar Shave Club runs on Shopify; the storefront exposes Shopify's customer-account OAuth/OIDC
+  discovery documents. The issuer points at shopify.com/authentication/56839438384 and advertises a customer-account-mcp-api:full
+  scope (Shopify's customer-account MCP API). No developer-facing /.well-known/security.txt, api-catalog
+  or ai-plugin.json is published.
+hosts:
+- host: https://us.dollarshaveclub.com
+  documents:
   - path: /.well-known/openid-configuration
     status: 200
     file: dollar-shave-openid-configuration.json
@@ -22,3 +21,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
